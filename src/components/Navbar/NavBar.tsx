@@ -1,4 +1,4 @@
-import { Navbar, Container, Nav } from "react-bootstrap"
+import { Navbar, Container, Nav, Button } from "react-bootstrap"
 import { Basket, Person } from "react-bootstrap-icons"
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -58,7 +58,7 @@ const NavBar = () => {
                         
                         
 
-                        <Nav.Link onClick={handleShowModal}>Agregar tarea</Nav.Link>
+                       <Button><Nav.Link onClick={handleShowModal}>Agregar tarea</Nav.Link></Button>
                     </Nav>
 
                     <Nav className="d-none d-md-flex ms-auto">

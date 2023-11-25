@@ -58,7 +58,8 @@ const NavBar = () => {
                         
                         
 
-                       <Button style={{height: '10px'}} variant="primary" size="sm"><Nav.Link onClick={handleShowModal}>Agregar tarea</Nav.Link></Button>
+                       <Button className='d-flex gap-1 align-items-center rounded p-3 text-decoration-none'
+                style={{cursor: 'pointer', height: '10px'}} variant="primary" size="sm"><Nav.Link style={{color: '#fff', textDecoration: 'none'}} onClick={handleShowModal}>Agregar tarea</Nav.Link></Button>
                     </Nav>
 
                     <Nav className="d-none d-md-flex ms-auto">

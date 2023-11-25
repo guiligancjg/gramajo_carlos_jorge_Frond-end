@@ -1,7 +1,7 @@
 import { Task } from "../components/Types/Task"
 
 
-const BASE_URL = "http://localhost:3000/tasks";
+const BASE_URL = "https://back-end-lfrm.onrender.com/tasks";
 
 
 export const TaskService =  {

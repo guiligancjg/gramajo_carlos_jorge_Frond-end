@@ -41,7 +41,7 @@ const CategoriasSelector: React.FC<CategoriasSelectorProps> = ({onSelectedCatego
                   case 'PORHACER':
                     return 'primary';
                   case 'ENPRODUCCION':
-                    return 'secondary';
+                    return 'dark';
                   case 'PORTESTEAR':
                     return 'warning';
                   case 'COMPLETADA':
@@ -55,7 +55,7 @@ const CategoriasSelector: React.FC<CategoriasSelectorProps> = ({onSelectedCatego
               
               
               onClick={()=> handleClickCategory(categoria.nombre)}
-                className='border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none'
+                className='d-flex gap-1 align-items-center rounded p-3 text-decoration-none'
                 style={{cursor: 'pointer'}}>
                     {categoria.icono} {categoria.nombre} 
               </Button>

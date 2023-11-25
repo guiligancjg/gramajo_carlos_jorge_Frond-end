@@ -1,6 +1,6 @@
 import { TaskService } from "../../services/TaskService";
 import { useEffect, useState } from "react"
-import { Task } from "../../Types/Task"
+import { Task } from "../Types/Task"
 import CategoriasSelector from "../CategoriasSelector/CategoriasSelector";
 import CategoriasTareas from "../CategoriasTareas/CategoriasTareas";
 

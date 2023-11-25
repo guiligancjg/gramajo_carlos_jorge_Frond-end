@@ -1,13 +1,16 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { Task } from "../../Types/Task";
+import { Task } from "../Types/Task";
 import { Link } from "react-router-dom";
+//import { Border } from 'react-bootstrap-icons';
 
 
 const CategoriasTareas = ({ tasks }: { tasks: Task[] }) => {
   const categorias = ['PORHACER', 'ENPRODUCCION', 'PORTESTEAR', 'COMPLETADA'];
   const cate = ['POR HACER', 'EN PRODUCCION', 'POR TESTEAR', 'COMPLETADA'];
-  const colorCate = ['#0B5ED7','#5C636A','#FFCA2C','#147347'];
+  const colorCate = ['#0B5ED7','#302B2B','#FFCA2C','#147347'];
+
+  
 
   //console.log(tasks);
   return (
@@ -35,12 +38,13 @@ const CategoriasTareas = ({ tasks }: { tasks: Task[] }) => {
                       <span>{`Tiempo: ${task.tiempo}`}</span><br />
                       <span>{`Responsable: ${task.responsable}`}</span>
                     </Card.Text>
+                    
                     <Button variant={(() => {
                       switch (categoria.toUpperCase()) {
                         case 'PORHACER':
                           return 'primary';
                         case 'ENPRODUCCION':
-                          return 'secondary';
+                          return 'dark';
                         case 'PORTESTEAR':
                           return 'warning';
                         case 'COMPLETADA':

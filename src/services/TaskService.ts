@@ -1,4 +1,4 @@
-import { Task } from "../Types/Task"
+import { Task } from "../components/Types/Task"
 
 
 const BASE_URL = "http://localhost:3000/tasks";
@@ -14,10 +14,12 @@ export const TaskService =  {
     },
 
     // Obtener una tarea
-    getOneTask:async (id: number): Promise<Task[]> => {
+    getOneTask: async (id: number): Promise<Task> => {
         const response = await fetch(`${BASE_URL}/${id}`);
         const data = await response.json();
         return data;
+        console.log(data);
+
     },
 
     // Obtener tareas por categoria
@@ -28,7 +30,7 @@ export const TaskService =  {
     },
 
     // Eliminar una tarea
-    deteleteTask: async (id:number): Promise<void>=> {
+    deleteTask: async (id:number): Promise<void>=> {
         await fetch(`${BASE_URL}/${id}`,{
             method: 'DELETE',
 

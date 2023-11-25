@@ -8,7 +8,6 @@ export interface Task {
     imagen: string;
     responsable: string;
     estado: string;
-    color: string;
 }
 
-
+export default Task;

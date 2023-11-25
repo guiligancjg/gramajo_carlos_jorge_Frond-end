@@ -7,6 +7,9 @@ import { Task } from "../Types/Task";
 import { toast } from "react-toastify";
 import ModalAgregarTarea from "../ModalAgregarTarea/ModalAgregarTarea";
 
+import Image from 'next/image'
+import profilePic from '../../../public/imagenes/logo.png'
+
 const NavBar = () => {
     const navigate = useNavigate();
     const [showModal, setShowModal] = useState(false);
@@ -46,7 +49,7 @@ const NavBar = () => {
         <>
         <Navbar id="detalle-section" expand="lg" className="bg-body-tertiary">
             <Container>
-                <Nav.Link onClick={() => navigate('/')}> <img src={"public/imagenes/logo.png"} alt="Gramajo Carlos Jorge - Comisión 079" /> </Nav.Link>
+                <Nav.Link onClick={() => navigate('/')}><Image src={profilePic} alt="Gramajo Carlos Jorge Comisión 075" /> </Nav.Link>
                 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

@@ -46,7 +46,7 @@ const NavBar = () => {
         <>
         <Navbar id="detalle-section" expand="lg" className="bg-body-tertiary">
             <Container>
-                <Nav.Link onClick={() => navigate('/')}> <img src="https://back-end-lfrm.onrender.com/public/imagenes/logo.png" alt="Gramajo Carlos Jorge - Comisión 079" /> </Nav.Link>
+                <Nav.Link onClick={() => navigate('/')}> <img src="http://back-end-lfrm.onrender.com/public/imagenes/logo.png" alt="Gramajo Carlos Jorge - Comisión 079" /> </Nav.Link>
                 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

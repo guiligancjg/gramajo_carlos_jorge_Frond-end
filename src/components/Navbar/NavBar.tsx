@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 import ModalAgregarTarea from "../ModalAgregarTarea/ModalAgregarTarea";
 
 import Image from 'next/image'
-import profilePic from '../../../public/imagenes/logo.png'
+import profilePic from 'public/imagenes/logo.png'
 
 const NavBar = () => {
     const navigate = useNavigate();

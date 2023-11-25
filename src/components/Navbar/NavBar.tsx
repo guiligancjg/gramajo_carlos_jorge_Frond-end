@@ -49,7 +49,7 @@ const NavBar = () => {
         <>
         <Navbar id="detalle-section" expand="lg" className="bg-body-tertiary">
             <Container>
-                <Nav.Link onClick={() => navigate('/')}><Image src={"https://gramajo-carlos-jorge-frond-end.vercel.app/public/imagenes/logo.png"} alt="Gramajo Carlos Jorge Comisión 075" /> </Nav.Link>
+                <Nav.Link onClick={() => navigate('/')}><Image src={"imagenes/logo.png"} alt="Gramajo Carlos Jorge Comisión 075" /> </Nav.Link>
                 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

@@ -7,7 +7,7 @@ import { Task } from "../Types/Task";
 import { toast } from "react-toastify";
 import ModalAgregarTarea from "../ModalAgregarTarea/ModalAgregarTarea";
 
-import Image from 'next/image'
+import Image from 'react-bootstrap/Image'
 
 
 const NavBar = () => {
